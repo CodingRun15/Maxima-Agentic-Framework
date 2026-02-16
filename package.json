@@ -1,11 +1,11 @@
 {
-    "name": "ai-project-manager",
+    "name": "maxima-agentic-framework",
     "version": "1.0.0",
     "description": "Maxima - Cost-optimized AI Project Manager with state management, dependency analysis, and multi-provider LLM integration",
     "type": "module",
     "main": "./dist/cli/index.js",
     "bin": {
-        "maxima": "./dist/cli/index.js"
+        "maxima": "dist/cli/index.js"
     },
     "scripts": {
         "build": "tsc",
