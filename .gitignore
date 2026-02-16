@@ -1,0 +1,11 @@
+.aistate
+node_modules
+yarn.lock
+package-lock.json
+dist
+# Environment variables
+.env
+
+# IDE
+.idea
+.vscode

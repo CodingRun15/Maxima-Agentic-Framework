@@ -1,0 +1,45 @@
+{
+    "name": "ai-project-manager",
+    "version": "1.0.0",
+    "description": "Maxima - Cost-optimized AI Project Manager with state management, dependency analysis, and multi-provider LLM integration",
+    "type": "module",
+    "main": "./dist/cli/index.js",
+    "bin": {
+        "maxima": "./dist/cli/index.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsx src/cli/index.ts",
+        "start": "node dist/cli/index.js",
+        "mcp": "node dist/mcp/server.js",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "typecheck": "tsc --noEmit"
+    },
+    "keywords": [
+        "ai",
+        "project-manager",
+        "llm",
+        "mcp",
+        "cli"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "@anthropic-ai/sdk": "^0.74.0",
+        "@google/generative-ai": "^0.24.1",
+        "@modelcontextprotocol/sdk": "^1.26.0",
+        "@types/inquirer": "^9.0.9",
+        "@types/node": "^25.2.3",
+        "chalk": "^5.6.2",
+        "commander": "^14.0.3",
+        "dotenv": "^17.2.4",
+        "inquirer": "^13.2.2",
+        "js-yaml": "^4.1.1",
+        "ollama": "^0.6.3",
+        "openai": "^6.21.0",
+        "tsx": "^4.21.0",
+        "typescript": "^5.9.3",
+        "vitest": "^4.0.18",
+        "zod": "^4.3.6"
+    }
+}
